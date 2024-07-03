@@ -61,17 +61,17 @@
     <div id="box1">
         <h2>Box 1</h2>
         <p>This is the first box. It has a light blue background, rounded corners, and a solid border. This box includes an image below to enhance the visual appeal of the content. The image should be relevant to the content described and help illustrate the point.</p>
-        <img src="images/section1.jpg" id="box1_img"> 
+        <img src="images/section1.jpg"> 
     </div>
     <div id="box2">
         <h2>Box 2</h2>
         <p>This is the second box. It has a light orange background, slightly rounded corners, a solid border, and a shadow. Including an image in this box helps break up the text and provides a visual example of the content. The use of CSS box shadow enhances the 3D effect of this box.</p>
-        <img src="box2.jpg" id="box2_img">
+        <img src="images/section2.jpg">
     </div>
     <div id="box3">
         <h2>Box 3</h2>
         <p>This is the third box. It has a light purple background, no rounded corners, and a dashed border. This box also includes an image, which helps to demonstrate how different styles and borders can be applied to create distinct visual sections within a webpage.</p>
-        <img src="box3.jpg" id="box3_img">
+        <img src="images/section3.jpg">
     </div>
 </body>
 </html>
