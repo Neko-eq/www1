@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Practice</title>
+    <style>
+        #box1{
+            background-color: lightblue;
+            border-style: solid;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #box2{
+            background-color: #fff2e6;
+            border: 2px;
+            padding: 20px;
+            margin: 20px;
+            border-style: solid;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        #box3{
+            background-color: #f9e6ff;
+            border-style: dashed;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 0px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 979px) {
+            h2 { font-size: 20px; }
+            p { font-size: 16px; }
+        }
+
+        @media screen and (max-width: 768px) {
+            h2 { font-size: 18px; }
+            p { font-size: 14px; }
+            #box1, #box2, #box3 {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h2 { font-size: 16px; }
+            p { font-size: 12px; }
+            #box1, #box2, #box3 {
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h2>Box 1</h2>
+        <p>This is the first box. It has a light blue background, rounded corners, and a solid border. This box includes an image below to enhance the visual appeal of the content. The image should be relevant to the content described and help illustrate the point.</p>
+        <img src="images/section1.jpg" id="box1_img"> 
+    </div>
+    <div id="box2">
+        <h2>Box 2</h2>
+        <p>This is the second box. It has a light orange background, slightly rounded corners, a solid border, and a shadow. Including an image in this box helps break up the text and provides a visual example of the content. The use of CSS box shadow enhances the 3D effect of this box.</p>
+        <img src="box2.jpg" id="box2_img">
+    </div>
+    <div id="box3">
+        <h2>Box 3</h2>
+        <p>This is the third box. It has a light purple background, no rounded corners, and a dashed border. This box also includes an image, which helps to demonstrate how different styles and borders can be applied to create distinct visual sections within a webpage.</p>
+        <img src="box3.jpg" id="box3_img">
+    </div>
+</body>
+</html>
