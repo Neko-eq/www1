@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .box {
+            background-color: lightblue;
+            border-style: solid;
+            margin: 20px;
+            padding: 20px;
+            flex: 1 1 22%;
+            box-sizing: border-box;
+        }
+
+        #section2 {
+            background-color: #fff2e6;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #section3 {
+            background-color: #eeffdb;
+        }
+
+        #section4 {
+            background-color: #dfa5f1;
+            padding: 3px;
+            margin: 25px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .box {
+                flex: 1 1 30%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .box {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #section4 {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .box {
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="section1" class="box">
+        <h2>section 1</h2>
+        <p>test</p>
+        <img src="images/section1.jpg"> 
+    </div>
+    <div id="section2" class="box">
+        <h2>section 2</h2>
+        <p>test</p>
+        <img src="images/section2.jpg">
+    </div>
+    <div id="section3" class="box">
+        <h2>section 3</h2>
+        <p>test</p>
+        <img src="images/section3.jpg">
+    </div>
+    <div id="section4" class="box">
+        <h2>section 4</h2>
+        <p>test</p>
+        <img src="images/section4.jpg">
+    </div>
+</body>
+</html>
